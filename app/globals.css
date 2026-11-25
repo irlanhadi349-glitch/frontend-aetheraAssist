@@ -3,6 +3,10 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --warna: #09251C;
+  --warna-2: #12544F;
+  --warna-3:#2E4540;
+  
 }
 
 @theme inline {
@@ -10,6 +14,9 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --color-warna: var(--warna);
+  --color-warna-2: var(--warna-2);
+  --color-warna-3: var(--warna-3);
 }
 
 @media (prefers-color-scheme: dark) {
