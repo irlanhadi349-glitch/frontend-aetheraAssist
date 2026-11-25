@@ -105,10 +105,10 @@ export default function DetailLayanan() {
     return <div className="text-center p-10">Layanan tidak ditemukan.</div>;
   }
 
-  const fotoList = Array.isArray(layanan.foto) && layanan.foto.length > 0
-    ? layanan.foto
-    : layanan.foto && !Array.isArray(layanan.foto)
-    ? [layanan.foto]
+  const fotoList = Array.isArray(layanan.gambarUrl) && layanan.gambarUrl.length > 0
+    ? layanan.gambarUrl
+    : layanan.gambarUrl && !Array.isArray(layanan.gambarUrl)
+    ? [layanan.gambarUrl]
     : ["/dummy-image.jpg"];
 
   const thumbnailList = [

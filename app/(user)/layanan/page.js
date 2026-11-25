@@ -92,7 +92,7 @@ export default function HalamanLayanan() {
                   namaJasa={layanan.namaJasa}
                   harga={layanan.harga}
                   deskripsi={layanan.deskripsi}
-                  fotoLayanan={layanan.foto}
+                  fotoLayanan={layanan.gambarUrl}
                 />
               ))
             ) : (

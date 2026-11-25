@@ -71,7 +71,7 @@ export default function Beranda() {
                   namaJasa={layanan.namaJasa}
                   harga={layanan.harga}
                   deskripsi={layanan.deskripsi}
-                  fotoLayanan={layanan.foto}
+                  fotoLayanan={layanan.gambarUrl}
                 />
               </div>
             ))}
