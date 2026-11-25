@@ -78,9 +78,9 @@ export default function HalamanPesanan() {
 
             {pesananTersaring.length > 0 ? (
                 pesananTersaring.map((p) => {
-                    const gambarLayanan = Array.isArray(p.layanan?.foto)
-                        ? p.layanan.foto[0]
-                        : p.layanan?.foto;
+                    const gambarLayanan = Array.isArray(p.layanan?.gambarUrl)
+                        ? p.layanan.gambarUrl[0]
+                        : p.layanan?.gambarUrl;
 
                     return (
                         <CardPesanan

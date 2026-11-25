@@ -200,7 +200,7 @@ export default function MonitoringTransaksi() {
           item.pesanan?.layanan?.namaJasa ||
           item.namaJasa ||
           `Pesanan #${item.pesananId}`;
-        const fotoRaw = item.pesanan?.layanan?.foto || item.foto;
+        const fotoRaw = item.pesanan?.layanan?.gambarUrl || item.gambarUrl;
         const gambar = Array.isArray(fotoRaw) ? fotoRaw[0] : fotoRaw;
 
         return (

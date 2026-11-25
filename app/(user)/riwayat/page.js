@@ -92,9 +92,7 @@ export default function HalamanTransaksi() {
                         "Transaksi Layanan";
                     const fotoRaw =
                         t.pesanan?.layanan?.gambarUrl ||
-                        t.layanan?.gambarUrl ||
-                        t.pesanan?.layanan?.foto ||
-                        t.layanan?.foto;
+                        t.layanan?.gambarUrl;
                     const gambarLayanan = Array.isArray(fotoRaw) ? fotoRaw[0] : fotoRaw;
                     const hargaTransaksi =
                         t.jumlahBayar ??

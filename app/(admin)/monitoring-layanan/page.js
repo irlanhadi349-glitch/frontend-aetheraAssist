@@ -174,7 +174,7 @@ export default function MonitoringLayanan() {
       accessor: "namaJasa",
       className: "whitespace-nowrap",
       render: (item) => {
-        const gambar = Array.isArray(item.foto) ? item.foto[0] : item.foto;
+        const gambar = Array.isArray(item.gambarUrl) ? item.gambarUrl[0] : item.gambarUrl;
         return (
           <div className="flex items-center gap-3">
             <img
