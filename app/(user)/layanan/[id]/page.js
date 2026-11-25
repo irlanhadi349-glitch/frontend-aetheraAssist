@@ -204,7 +204,7 @@ export default function DetailLayanan() {
                 namaJasa={item.namaJasa}
                 harga={item.harga}
                 deskripsi={item.deskripsi}
-                fotoLayanan={item.foto}
+                fotoLayanan={item.gambarUrl}
               />
             </div>
           ))}

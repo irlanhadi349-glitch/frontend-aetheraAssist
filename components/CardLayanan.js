@@ -9,6 +9,7 @@ export default function CardLayanan({ id, namaJasa, harga, deskripsi, fotoLayana
         <img
           src={gambarUrl || "/dummy-image.jpg"}
           alt={`Gambar ${namaJasa}`}
+          referrerPolicy="no-referrer"
           className="w-full h-full object-cover"
         />
         <div className="absolute inset-0 bg-warna opacity-40 group-hover:opacity-10 transition duration-300"></div>
