@@ -89,7 +89,7 @@ export default function HalamanPesanan() {
                             namaJasa={p.layanan?.namaJasa || "Layanan"}
                             gambar={gambarLayanan || "/dummy-image.jpg"}
                             status={p.status}
-                            harga={p.Harga}
+                            harga={p.harga}
                         />
                     );
                 })
