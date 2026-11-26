@@ -22,8 +22,8 @@ export default function MonitoringLayanan() {
   const [selectedId, setSelectedId] = useState(null);
   const [formData, setFormData] = useState({
     namaJasa: "",
-    harga: "",
     deskripsi: "",
+    harga: "",
     foto: "",
   });
   const router = useRouter();
@@ -126,8 +126,8 @@ export default function MonitoringLayanan() {
 
     const payload = {
       namaJasa: formData.namaJasa,
-      harga: Number(formData.harga),
       deskripsi: formData.deskripsi,
+      harga: Number(formData.harga),
       foto: fotoArray,
     };
 
