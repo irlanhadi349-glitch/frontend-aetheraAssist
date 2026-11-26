@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useState } from "react";
 import CardPesanan from "@/components/cardpesanan";
-import { getPesanan } from "@/lib/api/pesananApi";
+import { getPesananSaya } from "@/lib/api/pesananApi";
 import FilterLayanan from "@/components/FilterLayanan";
 import { getToken,clearToken } from "@/lib/auth";
 import { useRouter } from "next/navigation";
@@ -21,7 +21,7 @@ export default function HalamanPesanan() {
 
         const fetchPesanan = async () => {
             try {
-                const res = await getPesanan();
+                const res = await getPesananSaya();
                 const dataPesanan = Array.isArray(res?.data)
                     ? res.data
                     : Array.isArray(res)
@@ -89,7 +89,7 @@ export default function HalamanPesanan() {
                             namaJasa={p.layanan?.namaJasa || "Layanan"}
                             gambar={gambarLayanan || "/dummy-image.jpg"}
                             status={p.status}
-                            harga={p.totalHarga}
+                            harga={p.Harga}
                         />
                     );
                 })
